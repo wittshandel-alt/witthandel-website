@@ -355,3 +355,16 @@ footer.site .cols a { display: block; margin: 0 0 8px; }
 footer.site .cols p { margin: 0 0 8px; line-height: 1.6; }
 footer.site .f-title { color: var(--on-dark); font-size: 12px; letter-spacing: .18em; text-transform: uppercase; font-weight: 600; margin-bottom: 14px !important; }
 @media (prefers-reduced-motion: reduce) { .menu-m summary span, .chips a { transition: none; } }
+/* the ready-made email shown after picking a subject (mail.js) */
+.chips a.on { border-color: var(--accent-bright); background: rgba(72,213,162,.12); }
+.mail-draft { margin-top: 16px; border: 1px solid var(--line-dark); border-radius: 14px; padding: 16px 18px; background: rgba(255,255,255,.03); max-width: 560px; }
+.mail-draft dl { display: grid; grid-template-columns: auto 1fr; gap: 4px 14px; margin: 0 0 10px; font-size: 14px; }
+.mail-draft dt { color: var(--on-dark-muted); } .mail-draft dd { margin: 0; color: var(--on-dark); overflow-wrap: anywhere; }
+.mail-draft pre { font-family: inherit; font-size: 14px; line-height: 1.7; white-space: pre-wrap; margin: 0 0 12px; padding: 10px 12px; border-radius: 10px;
+  background: rgba(0,0,0,.25); color: var(--on-dark); }
+.mail-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.mail-actions button, .mail-actions a { font: inherit; font-size: 14px; cursor: pointer; text-decoration: none; padding: 8px 14px;
+  border-radius: 999px; border: 1px solid var(--line-dark); background: transparent; color: var(--on-dark); }
+.mail-actions button:first-child { background: var(--on-dark); color: var(--ink); border-color: var(--on-dark); }
+.mail-actions a:hover, .mail-actions button:hover { border-color: var(--accent-bright); }
+.mail-hint { font-size: 13px; color: var(--on-dark-muted); margin: 10px 0 0; }
