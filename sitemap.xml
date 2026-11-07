@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.witthandel.de/</loc></url>
+  <url><loc>https://www.witthandel.de/marken/</loc></url>
+  <url><loc>https://www.witthandel.de/lieferanten/</loc></url>
   <url><loc>https://www.witthandel.de/en/</loc></url>
+  <url><loc>https://www.witthandel.de/en/brands/</loc></url>
+  <url><loc>https://www.witthandel.de/en/suppliers/</loc></url>
 </urlset>

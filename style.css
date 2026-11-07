@@ -311,3 +311,4 @@ body.legal-page header.site { background: var(--ink); }
 .guarantee p { margin: 0; color: var(--on-dark-muted); font-size: 16px; }
 .gso-cta { margin-top: 48px; display: flex; flex-wrap: wrap; gap: 16px 28px; align-items: center; }
 .gso-cta small { color: var(--on-dark-muted); font-size: 14px; }
+nav.main a.active { color: var(--on-dark); }
