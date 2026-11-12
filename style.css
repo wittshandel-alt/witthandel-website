@@ -127,6 +127,9 @@ h2 { font-family: var(--display); font-weight: 650; font-size: clamp(36px, 5.4vw
 .tiles { display: grid; gap: 18px; grid-template-columns: repeat(4, 1fr); }
 @media (max-width: 1000px) { .tiles { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 560px) { .tiles { grid-template-columns: 1fr; } }
+.tiles.two { grid-template-columns: 1fr 1fr; }
+@media (max-width: 700px) { .tiles.two { grid-template-columns: 1fr; } }
+.tile h3 { overflow-wrap: break-word; hyphens: auto; padding-right: 30px; }
 .tile { position: relative; overflow: hidden; border-radius: var(--radius); padding: 28px; min-height: 330px; display: flex; flex-direction: column;
   justify-content: space-between; background: var(--white); border: 1px solid var(--line); transition: transform .3s, box-shadow .3s; }
 .tile:hover { transform: translateY(-4px); box-shadow: 0 24px 60px -30px rgba(11,13,12,.35); }
