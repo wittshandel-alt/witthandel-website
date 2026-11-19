@@ -11,7 +11,7 @@
   <link rel="alternate" hreflang="en" href="https://www.witthandel.de/en/brands/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="/fonts/inter-tight.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/style.css?v=20261112">
+  <link rel="stylesheet" href="/style.css?v=20261120">
   <meta property="og:title" content="For brands – Witt Handel">
   <meta property="og:description" content="Your exclusive distribution partner for German online retail: one partner instead of many sellers, controlled distribution, free advertising (PPC), monthly reporting – no fees and no risk for your brand.">
   <meta property="og:type" content="website">
@@ -50,7 +50,7 @@
       <h1>Your brand. <span class="soft">Sold online, under control.</span></h1>
       <p class="lead">We buy your goods outright and distribute them in German online retail – exclusively, with your brand presence and free advertising. You deliver, we handle the rest.</p>
       <div class="actions">
-        <a class="btn light" href="#offer">Free brand check <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn light" href="#brand-check">Free brand check <span class="arrow" aria-hidden="true">→</span></a>
         <a class="btn outline" href="#brands">Our commitments</a>
       </div>
       <div class="facts">
@@ -88,10 +88,24 @@
         <div class="guarantee"><span class="seal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></span><div><h3>Exclusivity guarantee</h3><p>We sell your brand to end customers only and never pass it on to other sellers. If we break this, you can end the partnership immediately and without notice. Agreed in writing.</p></div></div>
         <div class="guarantee"><span class="seal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></span><div><h3>Start without commitment</h3><p>We begin with a pilot order – no minimum term. If the results don't convince you, the partnership simply ends.</p></div></div>
       </div>
-      <div class="gso-cta">
-        <a class="btn light" href="mailto:info@witthandel.de?subject=Free%20brand%20check&amp;body=Brand%3A%20%0AWebsite%3A%20%0AProduct%20link%20or%20EAN%20%28optional%29%3A%20%0AContact%20person%3A%20">Request your free brand check <span class="arrow" aria-hidden="true">→</span></a>
-        <small>No obligation. You receive the report as a PDF by email, usually within 1–2 business days.</small>
-      </div>
+      <form class="bc-form" id="brand-check" data-endpoint="" data-lang="en" novalidate>
+        <p class="bc-title">Free brand check</p>
+        <div class="bc-grid">
+          <label>Brand *<input name="brand" required maxlength="80" autocomplete="organization"></label>
+          <label>Brand website<input name="website" maxlength="200" inputmode="url" placeholder="www.your-brand.com"></label>
+          <label class="wide"><span>Product link or EAN <em>(optional)</em></span><input name="product" maxlength="300"></label>
+          <label>Your name<input name="name" maxlength="80" autocomplete="name"></label>
+          <label>Business email *<input name="email" type="email" required maxlength="120" autocomplete="email" placeholder="name@your-brand.com"></label>
+          <label class="bc-hp" aria-hidden="true">Company URL<input name="company_url" tabindex="-1" autocomplete="off"></label>
+        </div>
+        <label class="bc-consent"><input type="checkbox" name="consent" value="1" required> <span>I work for this brand and agree that Witt Handel processes my details to prepare the brand check (<a href="/datenschutz.html#formular">privacy policy, German</a>).</span></label>
+        <div class="gso-cta">
+          <button class="btn light" type="submit">Request brand check <span class="arrow" aria-hidden="true">→</span></button>
+          <small>No obligation. We review every request personally – you get the report as a PDF by email, usually the same business day. A business email address of your brand speeds up the review.</small>
+        </div>
+        <p class="bc-msg" role="status" aria-live="polite" hidden></p>
+        <p class="bc-alt">Prefer email? <a href="mailto:info@witthandel.de?subject=Free%20brand%20check&amp;body=Brand%3A%20%0AWebsite%3A%20%0AProduct%20link%20or%20EAN%20%28optional%29%3A%20%0AContact%20person%3A%20">info@witthandel.de</a></p>
+      </form>
       <p class="fine">Terms, range, territory, duration and exclusivity are agreed individually and in writing for each brand. We set our selling prices ourselves; your RRP is non-binding. This page describes the components of our offer, not a blanket commitment.</p>
     </div>
   </section>
@@ -177,5 +191,6 @@
   </div>
 </footer>
 <script src="/mail.js?v=20261107b" defer></script>
+<script src="/brandcheck.js?v=20261120" defer></script>
 </body>
 </html>

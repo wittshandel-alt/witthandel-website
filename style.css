@@ -372,3 +372,28 @@ footer.site .f-title { color: var(--on-dark); font-size: 12px; letter-spacing: .
 .mail-actions button:first-child { background: var(--on-dark); color: var(--ink); border-color: var(--on-dark); }
 .mail-actions a:hover, .mail-actions button:hover { border-color: var(--accent-bright); }
 .mail-hint { font-size: 13px; color: var(--on-dark-muted); margin: 10px 0 0; }
+
+/* Free brand check form (20.11.2026) – on the dark offer section */
+.bc-form { scroll-margin-top: 96px; margin-top: 48px; padding: clamp(22px, 4vw, 36px); border: 1px solid var(--line-dark); border-radius: 22px;
+  background: rgba(255,255,255,.03); }
+.bc-title { font-family: var(--display); font-size: 22px; font-weight: 600; margin: 0 0 20px; }
+.bc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 20px; }
+@media (max-width: 700px) { .bc-grid { grid-template-columns: 1fr; } }
+.bc-grid .wide { grid-column: 1 / -1; }
+.bc-form label { display: flex; flex-direction: column; gap: 7px; font-size: 14px; color: var(--on-dark-muted); }
+.bc-form label em { font-style: normal; opacity: .7; }
+.bc-form input:not([type=checkbox]) { font: inherit; font-size: 16px; color: var(--on-dark); background: rgba(255,255,255,.05);
+  border: 1px solid var(--line-dark); border-radius: 12px; padding: 13px 15px; min-width: 0; }
+.bc-form input:not([type=checkbox]):focus { outline: none; border-color: var(--accent-bright); background: rgba(255,255,255,.08); }
+.bc-form input::placeholder { color: rgba(244,242,236,.32); }
+.bc-form .bc-hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.bc-form .bc-consent { flex-direction: row; align-items: flex-start; gap: 10px; margin-top: 20px; line-height: 1.5; }
+.bc-consent input { margin-top: 3px; accent-color: var(--accent-bright); width: 17px; height: 17px; flex: none; }
+.bc-consent a, .bc-alt a { color: var(--accent-bright); }
+.bc-form .gso-cta { margin-top: 26px; }
+.bc-form button.btn { border: 0; cursor: pointer; font: inherit; font-weight: 600; }
+.bc-form button.btn:disabled { opacity: .6; cursor: wait; }
+.bc-msg { margin: 18px 0 0; padding: 14px 16px; border-radius: 12px; background: rgba(255,255,255,.06); }
+.bc-msg.ok { background: rgba(72,213,162,.14); color: var(--on-dark); border: 1px solid rgba(72,213,162,.4); }
+.bc-msg.warn { background: rgba(201,169,106,.14); border: 1px solid rgba(201,169,106,.4); }
+.bc-alt { margin: 16px 0 0; font-size: 14px; color: var(--on-dark-muted); }

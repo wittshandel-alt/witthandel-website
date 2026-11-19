@@ -11,7 +11,7 @@
   <link rel="alternate" hreflang="en" href="https://www.witthandel.de/en/brands/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="/fonts/inter-tight.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/style.css?v=20261112">
+  <link rel="stylesheet" href="/style.css?v=20261120">
   <meta property="og:title" content="Für Marken – Witt Handel">
   <meta property="og:description" content="Ihr exklusiver Vertriebspartner für den deutschen Onlinehandel: ein Partner statt vieler Händler, kontrollierter Vertrieb, kostenlose Werbung (PPC), monatliches Reporting – ohne Gebühren und ohne Risiko für Ihre Marke.">
   <meta property="og:type" content="website">
@@ -50,7 +50,7 @@
       <h1>Ihre Marke. <span class="soft">Kontrolliert online verkauft.</span></h1>
       <p class="lead">Wir kaufen Ihre Ware fest ein und vertreiben sie im deutschen Onlinehandel – exklusiv, mit Ihrem Markenauftritt und kostenloser Werbung. Sie liefern, wir übernehmen den Rest.</p>
       <div class="actions">
-        <a class="btn light" href="#angebot">Kostenloser Marken-Check <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn light" href="#marken-check">Kostenloser Marken-Check <span class="arrow" aria-hidden="true">→</span></a>
         <a class="btn outline" href="#marken">Unsere Zusagen</a>
       </div>
       <div class="facts">
@@ -88,10 +88,24 @@
         <div class="guarantee"><span class="seal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></span><div><h3>Exklusiv-Garantie</h3><p>Wir verkaufen Ihre Marke nur an Endkunden und geben sie an keinen anderen Händler weiter. Halten wir das nicht ein, können Sie die Partnerschaft sofort und fristlos beenden. Schriftlich vereinbart.</p></div></div>
         <div class="guarantee"><span class="seal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></span><div><h3>Ohne Bindung starten</h3><p>Wir beginnen mit einer Pilotbestellung – ohne Mindestlaufzeit. Überzeugen die Ergebnisse nicht, endet die Zusammenarbeit einfach.</p></div></div>
       </div>
-      <div class="gso-cta">
-        <a class="btn light" href="mailto:info@witthandel.de?subject=Kostenloser%20Marken-Check&amp;body=Marke%3A%20%0AWebsite%3A%20%0AProdukt-Link%20oder%20EAN%20%28optional%29%3A%20%0AAnsprechpartner%3A%20">Kostenlosen Marken-Check anfordern <span class="arrow" aria-hidden="true">→</span></a>
-        <small>Unverbindlich. Den Bericht erhalten Sie als PDF per E-Mail, meist innerhalb von 1–2 Werktagen.</small>
-      </div>
+      <form class="bc-form" id="marken-check" data-endpoint="" data-lang="de" novalidate>
+        <p class="bc-title">Kostenloser Marken-Check</p>
+        <div class="bc-grid">
+          <label>Marke *<input name="brand" required maxlength="80" autocomplete="organization"></label>
+          <label>Website der Marke<input name="website" maxlength="200" inputmode="url" placeholder="www.ihre-marke.de"></label>
+          <label class="wide"><span>Produkt-Link oder EAN <em>(optional)</em></span><input name="product" maxlength="300"></label>
+          <label>Ihr Name<input name="name" maxlength="80" autocomplete="name"></label>
+          <label>Geschäftliche E-Mail *<input name="email" type="email" required maxlength="120" autocomplete="email" placeholder="name@ihre-marke.de"></label>
+          <label class="bc-hp" aria-hidden="true">Firma-URL<input name="company_url" tabindex="-1" autocomplete="off"></label>
+        </div>
+        <label class="bc-consent"><input type="checkbox" name="consent" value="1" required> <span>Ich bin für diese Marke tätig und einverstanden, dass Witt Handel meine Angaben zur Erstellung des Marken-Checks verarbeitet (<a href="/datenschutz.html#formular">Datenschutz</a>).</span></label>
+        <div class="gso-cta">
+          <button class="btn light" type="submit">Marken-Check anfordern <span class="arrow" aria-hidden="true">→</span></button>
+          <small>Unverbindlich. Wir prüfen jede Anfrage persönlich – den Bericht erhalten Sie als PDF per E-Mail, meist noch am selben Werktag. Eine geschäftliche E-Mail-Adresse Ihrer Marke beschleunigt die Prüfung.</small>
+        </div>
+        <p class="bc-msg" role="status" aria-live="polite" hidden></p>
+        <p class="bc-alt">Lieber per E-Mail? <a href="mailto:info@witthandel.de?subject=Kostenloser%20Marken-Check&amp;body=Marke%3A%20%0AWebsite%3A%20%0AProdukt-Link%20oder%20EAN%20%28optional%29%3A%20%0AAnsprechpartner%3A%20">info@witthandel.de</a></p>
+      </form>
       <p class="fine">Konditionen, Sortiment, Gebiet, Laufzeit und Exklusivität werden für jede Marke individuell und schriftlich vereinbart. Unsere Verkaufspreise legen wir selbst fest; Ihre UVP ist unverbindlich. Diese Seite beschreibt die Bestandteile unseres Angebots, keine pauschale Zusage.</p>
     </div>
   </section>
@@ -178,5 +192,6 @@
   </div>
 </footer>
 <script src="/mail.js?v=20261107b" defer></script>
+<script src="/brandcheck.js?v=20261120" defer></script>
 </body>
 </html>
