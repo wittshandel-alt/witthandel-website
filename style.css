@@ -397,3 +397,8 @@ footer.site .f-title { color: var(--on-dark); font-size: 12px; letter-spacing: .
 .bc-msg.ok { background: rgba(72,213,162,.14); color: var(--on-dark); border: 1px solid rgba(72,213,162,.4); }
 .bc-msg.warn { background: rgba(201,169,106,.14); border: 1px solid rgba(201,169,106,.4); }
 .bc-alt { margin: 16px 0 0; font-size: 14px; color: var(--on-dark-muted); }
+
+/* Partner login in the header (20.11.2026) */
+nav.main .partner-login { display: inline-flex; align-items: center; gap: 6px; color: var(--gold, #c9a96a); }
+nav.main .partner-login:hover { color: var(--on-dark); }
+nav.main .partner-login .lock { flex: none; }
