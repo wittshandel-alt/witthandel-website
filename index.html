@@ -11,7 +11,7 @@
   <link rel="alternate" hreflang="en" href="https://www.witthandel.de/en/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="/fonts/inter-tight.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/style.css?v=20261120b">
+  <link rel="stylesheet" href="/style.css?v=20261127">
   <meta property="og:title" content="Witt Handel – E-Commerce-Distribution für Markenware">
   <meta property="og:description" content="Witt Handel ist ein inhabergeführter E-Commerce-Distributor aus Pulheim: kontrollierter, markenkonformer Vertrieb im deutschen Onlinehandel – für Marken, Hersteller, Großhändler und Distributoren.">
   <meta property="og:type" content="website">
@@ -47,6 +47,7 @@
   <div class="hero">
     <div class="glow" aria-hidden="true"></div>
     <div class="grid-lines" aria-hidden="true"></div>
+    <canvas class="hero-orb" aria-hidden="true"></canvas>
     <div class="wrap">
       <p class="eyebrow">E-Commerce-Distribution · Deutschland</p>
       <h1>Markenware. <span class="soft">Kontrolliert online verkauft.</span></h1>
@@ -80,6 +81,42 @@
         <div><span class="who">Sie sind Großhändler</span><h3>Ein Abnehmer, auf den Sie bauen können.</h3><p>Verlässliche Zahlung, regelmäßiges Volumen, professionelle Abwicklung.</p></div>
         <span class="go">Mehr erfahren <span aria-hidden="true">→</span></span>
       </a>
+    </div>
+  </section>
+  <section class="proof" id="bericht">
+    <div class="wrap proof-grid">
+      <div>
+        <p class="kicker">Transparenz, die Sie sehen</p>
+        <h2>So sieht Ihr Monatsbericht aus.</h2>
+        <p class="intro">Jeden Monat, ohne Nachfrage: was verkauft wurde, was auf Lager liegt, wie sich der Preis entwickelt – und wer Ihre Marke sonst noch anbietet.</p>
+        <ul class="proof-list">
+          <li><b>Absatz &amp; Umsatz</b> pro Produkt und Tag</li>
+          <li><b>Bestand</b> und wie lange er reicht</li>
+          <li><b>Preisstabilität</b> und Buy-Box-Anteil</li>
+          <li><b>Marktbeobachtung</b>: unautorisierte Angebote</li>
+        </ul>
+      </div>
+      <figure class="report" aria-label="Beispiel eines Monatsberichts mit fiktiven Zahlen">
+        <div class="r-top"><span class="r-mark">Witthandel</span><span>Markenbericht · Oktober 2026</span><em>Beispielmarke</em></div>
+        <div class="r-kpis">
+          <div><span>Absatz</span><b>1.284</b><small class="up">▲ 18 % ggü. Vormonat</small></div>
+          <div><span>Umsatz</span><b>18.420&nbsp;€</b><small class="up">▲ 14 %</small></div>
+          <div><span>Bestand reicht</span><b>41 Tage</b><small>Nachbestellung am 12.11.</small></div>
+          <div><span>Buy Box</span><b>96&nbsp;%</b><small>Preis stabil</small></div>
+        </div>
+        <svg class="r-chart" viewBox="0 0 600 150" preserveAspectRatio="none" aria-hidden="true">
+          <defs><linearGradient id="rg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#48d5a2" stop-opacity=".35"/><stop offset="1" stop-color="#48d5a2" stop-opacity="0"/></linearGradient></defs>
+          <path d="M0,112 L20,104 L40,108 L60,96 L80,99 L100,88 L120,94 L140,82 L160,86 L180,74 L200,80 L220,70 L240,76 L260,64 L280,70 L300,58 L320,66 L340,54 L360,60 L380,48 L400,56 L420,44 L440,50 L460,40 L480,46 L500,34 L520,42 L540,30 L560,36 L580,26 L600,30 L600,150 L0,150Z" fill="url(#rg)"/>
+          <path d="M0,112 L20,104 L40,108 L60,96 L80,99 L100,88 L120,94 L140,82 L160,86 L180,74 L200,80 L220,70 L240,76 L260,64 L280,70 L300,58 L320,66 L340,54 L360,60 L380,48 L400,56 L420,44 L440,50 L460,40 L480,46 L500,34 L520,42 L540,30 L560,36 L580,26 L600,30" fill="none" stroke="#48d5a2" stroke-width="2.5" vector-effect="non-scaling-stroke"/>
+        </svg>
+        <div class="r-rows">
+          <div><span>Produkt A · 250 ml</span><i style="--w:100%"></i><b>612</b></div>
+          <div><span>Produkt B · 3er-Pack</span><i style="--w:64%"></i><b>391</b></div>
+          <div><span>Produkt C · Nachfüller</span><i style="--w:46%"></i><b>281</b></div>
+        </div>
+        <div class="r-watch"><span class="dot"></span>Marktbeobachtung: 2 unautorisierte Angebote gefunden und Ihnen gemeldet</div>
+        <figcaption>Beispiel mit fiktiven Zahlen – Ihr Bericht zeigt Ihre echten Daten.</figcaption>
+      </figure>
     </div>
   </section>
   <section id="unternehmen" style="padding-top: clamp(80px, 10vw, 130px)">
@@ -160,5 +197,6 @@
   </div>
 </footer>
 <script src="/mail.js?v=20261107b" defer></script>
+<script src="/orb.js?v=20261127" defer></script>
 </body>
 </html>
