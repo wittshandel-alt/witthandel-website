@@ -403,7 +403,7 @@ nav.main .partner-login { display: inline-flex; align-items: center; gap: 6px; c
 nav.main .partner-login:hover { color: var(--on-dark); }
 nav.main .partner-login .lock { flex: none; }
 
-/* ---------- 27.11.2026: sphere, proof, owner, tighter phone ---------- */
+/* ---------- 27.11.2026: sphere, proof, tighter phone ---------- */
 canvas.hero-orb { position: absolute; z-index: 0; right: max(-60px, calc(50% - 700px)); top: 50%; transform: translateY(-54%);
   width: min(46vw, 640px); aspect-ratio: 1; pointer-events: none; }
 .hero .wrap { position: relative; z-index: 1; }
@@ -442,18 +442,12 @@ canvas.hero-orb { position: absolute; z-index: 0; right: max(-60px, calc(50% - 7
 @media (max-width: 900px) { .proof-grid { grid-template-columns: 1fr; } .report { transform: none; } }
 @media (max-width: 560px) { .r-kpis { grid-template-columns: 1fr 1fr; } .r-rows div { grid-template-columns: 110px 1fr 36px; font-size: 12px; } .report { padding: 16px; } }
 
-.owner { display: flex; align-items: center; gap: 18px; margin: 34px 0 0; padding: 18px 20px; border-radius: 20px; background: var(--white); border: 1px solid var(--line); max-width: 560px; }
-.owner-pic { width: 72px; height: 72px; flex: none; border-radius: 50%; display: grid; place-items: center; font: 700 22px var(--display); letter-spacing: .04em;
-  color: var(--on-dark); background: radial-gradient(circle at 30% 25%, #2a8f6a, #0f3a2b); box-shadow: 0 0 0 3px var(--paper), 0 0 0 4px rgba(30,122,90,.4); }
-.owner blockquote { margin: 0; font-family: var(--display); font-size: 18px; line-height: 1.35; letter-spacing: -.01em; }
-.owner cite { display: block; margin-top: 6px; font: 500 13px var(--body); color: var(--muted); font-style: normal; }
 
 @media (max-width: 600px) {
   section { padding: 64px 0; }
   .hero { min-height: auto; padding-bottom: 8px; }
   .eyebrow { font-size: 11px; letter-spacing: .14em; }
   .statement { padding: 56px 0; } .statement p.big { font-size: 30px; }
-  .owner { padding: 14px; gap: 14px; } .owner-pic { width: 56px; height: 56px; font-size: 18px; } .owner blockquote { font-size: 16px; }
 }
 @media (max-width: 860px) { canvas.hero-orb { width: 300px; right: -120px; top: 70px; opacity: .32; } }
 @media (max-width: 600px) { .eyebrow { white-space: nowrap; font-size: 10.5px; letter-spacing: .1em; gap: 10px; } .eyebrow::before { width: 22px; }
